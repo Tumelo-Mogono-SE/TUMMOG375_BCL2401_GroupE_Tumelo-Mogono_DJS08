@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { getVans } from "../../api";
 
 export default function Vans() {
-    const [searchParams, setSearchParams] = useSearchParams
+    const [searchParams, setSearchParams] = useSearchParams()
     const [vans, setVans] = React.useState([])
     const [loading, setLoading] = React.useState(false)
     const [error, setError] = React.useState(null)
