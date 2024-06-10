@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFireStore, collection, getDocs, doc, getDoc, query, where } from "firebase/firestore/lite"
+import { getFirestore, collection, getDocs, doc, getDoc, query, where } from "firebase/firestore"
 
 const firebaseConfig = {
   apiKey: "AIzaSyDpxDUPOA6SUNxE0RqjpAu8bY7RJ8Fq2Z4",
@@ -12,7 +12,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFireStore(app)
+const db = getFirestore(app)
 
 // Refactoring the fetching function
 
